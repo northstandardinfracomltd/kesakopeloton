@@ -2648,12 +2648,14 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px !important;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, auto);
       gap: 30px;
-      max-width: 1000px;
-      width: 100%;
+      max-width: 1150px;
+      width: 93%;
       margin-right: auto;
       margin-left: auto; 
-      margin-top: -50px;
-      padding-bottom: 50px;
+      margin-top: -30px;
+      padding-bottom: 150px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .divlancelotmerlin {
@@ -2666,14 +2668,23 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px !important;
       background: #f6ffdb;
       box-shadow: #d4d4d7 6px 6px 0 0;
       padding-bottom: 25px;
-      padding-left: 15px;
-      padding-right: 15px;
-      line-height: 40px;
+      padding-left: 25px;
+      padding-right: 25px;
+      line-height: 38px;
+      cursor: default;
+    }
+    
+        .divlancelotmerlin:hover {
+         transform: scale(1.03);
+    transition-duration: 0.5s;
+          cursor: default;
+          box-shadow: #2d2e2e 6px 6px 0 0;
+          border: 1px solid #2d2e2e;
     }
     
     
         .entitledperk {
-      color: blue;
+      color: #3d4592;
     }
     
     
@@ -2682,9 +2693,32 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px !important;
       height: 60px;
       margin-left: auto;
       margin-right: auto;
-    margin-top: 10px;
+    margin-top: 30px;
       margin-bottom: 10px;
     }
+    
+            @media (min-width: 100px) and (max-width: 819px) {
+             .grid-containerlancelotmerlin {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, auto);
+                     padding-left: 20px;
+      padding-right: 20px;
+                     width: 89%;
+
+    }
+        }
+    
+      @media (min-width: 820px) and (max-width: 1066px) {
+             .grid-containerlancelotmerlin {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, auto);
+                     padding-left: 20px;
+      padding-right: 20px;
+                     width: 89%;
+
+    }
+        }
+    
   </style>
 
   <div class="grid-containerlancelotmerlin">
