@@ -1550,13 +1550,24 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, auto);
-            background: linear-gradient(45deg, #3e4592 20%, rgb(255 79 1) 80%);
+            background: #f6ffdb;
     }
 
     .column293 img {
       max-width: 230px !important;
-      
+      margin-top: 6px;
+    margin-bottom: 5px;
+    margin-left: 5px;
     }
+      
+      .column293 img:hover {
+  transform: scale(1.1); /* Zoom l'image au survol (à ajuster selon tes préférences) */
+}
+
+/* Ajout d'une autre classe pour changer l'image au survol */
+.column-left img:hover {
+  content: url('chemin/vers/nouvelle-image.jpg'); /* Remplace avec le chemin de ta nouvelle image */
+}
       
        .column2932 {
       text-align: right;
