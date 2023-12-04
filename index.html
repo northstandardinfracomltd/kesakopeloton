@@ -1548,7 +1548,7 @@
       
           .grid-container293 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, auto);
             background: #f6ffdb;
     }
@@ -1557,21 +1557,36 @@
       max-width: 230px !important;
       margin-top: 6px;
     margin-bottom: 5px;
-    margin-left: 5px;
+    margin-left: auto;
+      margin-right: auto;
+      transition: transform 0.3s ease;
+      opacity: 0.7;
     }
       
       .column293 img:hover {
+        opacity: 1;
+        transition: transform 0.3s ease; 
   transform: scale(1.1); /* Zoom l'image au survol (à ajuster selon tes préférences) */
 }
 
-/* Ajout d'une autre classe pour changer l'image au survol */
-.column-left img:hover {
-  content: url('chemin/vers/nouvelle-image.jpg'); /* Remplace avec le chemin de ta nouvelle image */
+.column293 img:hover {
+  opacity: 1;
+  content: url('https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako092323709232097332903820323.svg?v=1701623234872'); /* Remplace avec le chemin de ta nouvelle image */
 }
       
        .column2932 {
-      text-align: right;
+      text-align: center;
          margin-left: auto;
+    }
+      
+         
+       .column293txt {
+      display: none !important;
+    }
+      
+        .kazak {
+      text-align: center;
+          
     }
 
     </style>
@@ -1580,8 +1595,14 @@
         
     <div class="grid-container293">
       
-  <div class="column293">
-    <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako092323709232097332903820323.svg?v=1701623234872" alt="Description de l'image">
+      <div class="column293">
+    <div class="column293txt">
+    Kesako
+  </div>
+  </div>
+      
+  <div class="column293 kazak">
+    <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako092323709232097332938239238.svg?v=1701608355486" alt="Description de l'image">
   </div>
   <div class="column2932">
         <div class="menu-icon" id="menu-icon">
