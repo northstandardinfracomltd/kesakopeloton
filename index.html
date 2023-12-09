@@ -2167,11 +2167,35 @@
             font-size: 18px !important;
 
     }
+    
+     .ineoss {
+      position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+    }
   </style>
         
 
   </div>  </div> 
+  <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divineoss = document.querySelector('.ineoss');
+      divineoss.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divineoss.style.visibility = 'visible'; // Rendre la div visible
+      divineoss.style.position = 'static'; // Restaurer la position normale
+    }
 
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 16000); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+          
+  <div class="ineoss">
+
+                    
         <div class="kesakoCustomers">
           <img
             class="kesakoCustomersimg"
@@ -2329,20 +2353,9 @@
       
           
         
-          </div>
+          </div> 
     
-  <script>
-    // Fonction pour afficher la div en douceur après 16 secondes
-    function afficherDiv() {
-      var divKesakoCustomers = document.querySelector('.kesakoCustomers');
-      divKesakoCustomers.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
-      divKesakoCustomers.style.visibility = 'visible'; // Rendre la div visible
-      divKesakoCustomers.style.position = 'static'; // Restaurer la position normale
-    }
 
-    // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 16500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
-  </script>
     
         <style>
           
@@ -2362,13 +2375,9 @@
             margin-top: 55px;
             margin-bottom: 45px;
             background: transparent;
-                  position: absolute; /* Retirer la div du flux normal du document */
-      top: 0; /* Ajuster la position top selon vos besoins */
-      left: 0; /* Ajuster la position left selon vos besoins */
-      opacity: 0; /* Initialiser l'opacité à 0 */
-      visibility: hidden; /* Masquer la div */
-      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; 
-          }
+        }
+          
+  
 
           @media (min-width: 100px) and (max-width: 819px) {
             .kesakoCustomers {
@@ -2538,16 +2547,6 @@
           margin-left: auto;
           margin-right: auto;
           font-family: Arial, sans-serif;
-          
-            position: absolute; /* Retirer la div du flux normal du document */
-      top: 0; /* Ajuster la position top selon vos besoins */
-      left: 0; /* Ajuster la position left selon vos besoins */
-      opacity: 0; /* Initialiser l'opacité à 0 */
-      visibility: hidden; /* Masquer la div */
-      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
-    
-          
-          
         }
 
         @media (min-width: 100px) and (max-width: 819px) {
@@ -3044,18 +3043,6 @@
         }
       </style>
       
-  <script>
-    // Fonction pour afficher la div en douceur après 16 secondes
-    function afficherDiv() {
-      var divChatContainer = document.querySelector('.chat-container');
-      divChatContainer.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
-      divChatContainer.style.visibility = 'visible'; // Rendre la div visible
-      divChatContainer.style.position = 'static'; // Restaurer la position normale
-    }
-
-    // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 18500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
-  </script>
 
 
       <script>
