@@ -82,8 +82,16 @@
         padding-top: 150px;
         margin-top: -50px;
         border-radius: 0px 0px 22px 22px;
+             
+                height: 0; /* Initialiser la hauteur à 0 */
+      overflow: hidden; /* Masquer le contenu dépassant la hauteur */
+      transition: height 1s ease; /* Ajouter une transition sur la hauteur avec une durée de 1 seconde */
+    
       }
     
+          .container442lancelot-content {
+      /* Ajouter vos styles pour le contenu ici */
+    }
       
       .container442lancelot2 {
         width: 100%;
@@ -381,6 +389,15 @@
         border-top: 1px solid #d4d4d7;
     background: linear-gradient(142deg, #ffffff, #f9fdff, #ebfeff, #ddffff, #d9fff0, #cef8dd, #c9f1c8, #c9e8b0, #aad99a, #88ca86, #61bb75, #2aac67);
       }}
+      
+         .boynapped {
+      position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+    }
 
       ::selection {
         background-color: #ffd00082;
@@ -1533,7 +1550,7 @@
             .danielcraig {
               display: block;
               width: 90%;
-                    border-radius: 9px;
+                    border-radius: 0px;
               box-shadow: #7CF178 6px 6px 0 0;
               background:  transparent;
                       border: 1px solid #7CF178;
@@ -1813,19 +1830,18 @@
         
 
 
+
   <script>
-    // Fonction pour afficher la div en douceur après 16 secondes
+  
     function afficherDiv() {
       var divResponsive = document.querySelector('.responsivekesak');
-      divResponsive.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
-      divResponsive.style.visibility = 'visible'; // Rendre la div visible
-      divResponsive.style.position = 'static'; // Restaurer la position normale
+      divResponsive.style.opacity = '1'; 
+      divResponsive.style.visibility = 'visible'; 
+      divResponsive.style.position = 'static'; 
     }
 
-    // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 14900); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+    setTimeout(afficherDiv, 15000); 
   </script>
-
         
         <script>
           var words = [
@@ -2187,6 +2203,20 @@
           
         
           </div>
+    
+  <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divKesakoCustomers = document.querySelector('.kesakoCustomers');
+      divKesakoCustomers.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divKesakoCustomers.style.visibility = 'visible'; // Rendre la div visible
+      divKesakoCustomers.style.position = 'static'; // Restaurer la position normale
+    }
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 16500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+    
         <style>
           
                .faze1 {
@@ -2202,8 +2232,13 @@
             margin-left: auto;
             margin-top: 35px;
             margin-bottom: -35px;
-            opacity: 0.8;
-            background: #343434
+            background: #343434;
+                  position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; 
           }
 
           @media (min-width: 100px) and (max-width: 819px) {
@@ -2302,6 +2337,19 @@
             });
         </script>
    
+  <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divBoynapped = document.querySelector('.boynapped');
+      divBoynapped.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divBoynapped.style.visibility = 'visible'; // Rendre la div visible
+      divBoynapped.style.position = 'static'; // Restaurer la position normale
+    }
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 22000); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+
 
     <div class="boynapped">
 
@@ -2360,6 +2408,16 @@
           width: 400px;
           margin: 20px auto;
           font-family: Arial, sans-serif;
+          
+            position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+    
+          
+          
         }
 
         @media (min-width: 100px) and (max-width: 819px) {
@@ -2855,6 +2913,20 @@
           display: none;
         }
       </style>
+      
+  <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divChatContainer = document.querySelector('.chat-container');
+      divChatContainer.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divChatContainer.style.visibility = 'visible'; // Rendre la div visible
+      divChatContainer.style.position = 'static'; // Restaurer la position normale
+    }
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 18500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+
 
       <br />
       <br />
@@ -3107,5 +3179,25 @@ lens_blur
         "https:" +
         window.location.href.substring(window.location.protocol.length);
     }
+  </script>
+  
+    <script>
+    // Fonction pour ajuster la hauteur à 100vh pendant les 16 premières secondes
+    function ajusterHauteur() {
+      var divContainer442lancelot = document.querySelector('.container442lancelot');
+      divContainer442lancelot.style.height = '100vh'; // Ajuster la hauteur à 100vh
+    }
+
+    // Fonction pour supprimer la hauteur après 16 secondes
+    function supprimerHauteur() {
+      var divContainer442lancelot = document.querySelector('.container442lancelot');
+      divContainer442lancelot.style.height = 'auto'; // Supprimer la hauteur (utiliser 'auto' pour revenir à la hauteur automatique)
+    }
+
+    // Appeler la fonction d'ajustement de la hauteur après un délai de 0 millisecondes (au chargement de la page)
+    setTimeout(ajusterHauteur, 0);
+
+    // Appeler la fonction de suppression de la hauteur après un délai de 16000 millisecondes (16 secondes)
+    setTimeout(supprimerHauteur, 16000); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
 </html>
