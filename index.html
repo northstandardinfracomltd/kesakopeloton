@@ -983,6 +983,13 @@
         src: url("https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/sensei-bold.otf?v=1697967696528")
           format("opentype");
       }
+      
+      
+        @font-face {
+        font-family: k;
+        src: url("https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/sensei-bold.otf?v=1697967696528")
+          format("opentype");
+      }
 
       @font-face {
         font-family: senseimid;
@@ -1671,24 +1678,69 @@
 
 }
       
+      .menu-grid-headerkesako {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+    align-items: center;
+        
+
+    max-width: 1298px;
+    width: 95%;
+
+}
+
+.logo-headerkesako img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons-headerkesako {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-headerkesako {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.text-headerkesako {
+    text-align: right;
+}
+
 
     </style>
 
     
-        
-    <div class="grid-container293">
-      
-      <div class="column293">
-    <div class="column293txt">
-    Kesako
-  </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu Grid</title>
+</head>
+<body>
+
+<div class="menu-grid-headerkesako">
+    <!-- Colonne 1: Logo -->
+    <div class="logo-headerkesako">
+        <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako0923237092320973329038203239292929Git.svg?v=1701785272044" alt="Logo" style="max-width: 200px;">
+    <a href="#" class="button-headerkesako">Contact Sales</a>
+        <a href="#" class="button-headerkesako">Company Eco System</a>
+        <a href="#" class="button-headerkesako">Visit</a>
   </div>
 
-       <div class="column293 kazak">
-    <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako0923237092320973329038203239292929White.svg?v=1701783297622" alt="Description de l'image">
-  </div>
-  <div class="column2932">
-        <div class="menu-icon" id="menu-icon">
+
+
+    <!-- Colonne 3: Texte dummy -->
+    <div class="text-headerkesako">
+              <div class="menu-icon" id="menu-icon">
           <div class="icon" id="icon">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -1700,8 +1752,9 @@
             <a class="item" href="/terms-privacy">Terms and Privacy</a>
           </div>
   </div>
-    
-          <script>
+    </div>
+</div>
+   <script>
    
           const menuIcon = document.getElementById("menu-icon");
           const icon = document.getElementById("icon");
@@ -1710,11 +1763,12 @@
             icon.classList.toggle("active");
           });
         </script>
+</body>
+</html>
+
     
-</div>
     
-    </div>
-  
+
       
 
     
@@ -3201,3 +3255,5 @@ lens_blur
     setTimeout(supprimerHauteur, 16000); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
 </html>
+
+
