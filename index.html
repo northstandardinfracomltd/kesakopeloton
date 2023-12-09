@@ -2105,7 +2105,7 @@
         </div>
      
         
-  <div class="grid-container1">
+  <div class="gridcontainer1">
     <div class="divcontent1">
       <p class="txt1k"><span class="txt1kh">Facilité de Partage</span
           > — Accessibilité et diffusion sur tous les canaux : e-mail, SMS, site internet, impression, (...).</p>
@@ -2131,8 +2131,25 @@
           > — Existant depuis 1993, un PDF sera toujours d’actualité à l’usage.</p>
     </div>
   </div>
+        
+ 
+
+  <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divgridcontainer1 = document.querySelector('.gridcontainer1');
+      divgridcontainer1.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divgridcontainer1.style.visibility = 'visible'; // Rendre la div visible
+      divgridcontainer1.style.position = 'static'; // Restaurer la position normale
+    }
+
+    
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 16000); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+        
   <style>
-    .grid-container1 {
+    .gridcontainer1 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
@@ -2141,7 +2158,14 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
+      position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
     }
+ 
 
     .divcontent1 {
       border: 1.2px solid #3d3556;
@@ -3184,17 +3208,14 @@ text-align: left;
         .bg-primary {
     background-color: #28044A;
 }
+        .bg-primary2 {
+    background-color: #3d3556;
+          margin-bottom: -50px !important;
+}
+        
       </style>
 
-
-      
-  
-      
-    
-    
-
-    
-    
+ 
 
     <footer>
       <p class="masterkane">
@@ -3203,10 +3224,44 @@ text-align: left;
         <a href="mailto:mail@kesako.xyz" class="wrestling">mail@kesako.xyz</a>
         or <a href="tel:+447723501400" class="wrestling">+44 7723 501400</a>
       </p>
-                <div style="margin-top:-23px"><!--[--><div class="bg-primary" style="margin-top:0px;height:23px"></div><div class="bg-primary" style="margin-top:1px;height:22px"></div><div class="bg-primary" style="margin-top:2px;height:21px"></div><div class="bg-primary" style="margin-top:3px;height:20px"></div><div class="bg-primary" style="margin-top:4px;height:19px"></div><div class="bg-primary" style="margin-top:5px;height:18px"></div><div class="bg-primary" style="margin-top:6px;height:17px"></div><div class="bg-primary" style="margin-top:7px;height:16px"></div><div class="bg-primary" style="margin-top:8px;height:15px"></div><div class="bg-primary" style="margin-top:9px;height:14px"></div><div class="bg-primary" style="margin-top:10px;height:13px"></div><div class="bg-primary" style="margin-top:11px;height:12px"></div><div class="bg-primary" style="margin-top:12px;height:11px"></div><div class="bg-primary" style="margin-top:13px;height:10px"></div><div class="bg-primary" style="margin-top:14px;height:9px"></div><div class="bg-primary" style="margin-top:15px;height:8px"></div><div class="bg-primary" style="margin-top:16px;height:7px"></div><div class="bg-primary" style="margin-top:17px;height:6px"></div><div class="bg-primary" style="margin-top:18px;height:5px"></div><div class="bg-primary" style="margin-top:19px;height:4px"></div><div class="bg-primary" style="margin-top:20px;height:3px"></div><div class="bg-primary" style="margin-top:21px;height:2px"></div><div class="bg-primary" style="margin-top:22px;height:1px"></div><div class="bg-primary" style="margin-top:23px;height:0px"></div><!--]--></div>
-
+      
     </footer>
           
+  
+<div class="bg-primary2"  style="margin-top:-23px">
+ <div class="bg-primary" style="margin-top:0px;height:23px"></div>
+  <div class="bg-primary" style="margin-top:1px;height:22px"></div>
+  <div class="bg-primary" style="margin-top:2px;height:21px"></div>
+  <div class="bg-primary" style="margin-top:3px;height:20px"></div>
+  <div class="bg-primary" style="margin-top:4px;height:19px"></div>
+  <div class="bg-primary" style="margin-top:5px;height:18px"></div>
+  <div class="bg-primary" style="margin-top:6px;height:17px"></div>
+  <div class="bg-primary" style="margin-top:7px;height:16px"></div>
+  <div class="bg-primary" style="margin-top:8px;height:15px"></div>
+  <div class="bg-primary" style="margin-top:9px;height:14px"></div>
+  <div class="bg-primary" style="margin-top:10px;height:13px"></div>
+  <div class="bg-primary" style="margin-top:11px;height:12px"></div>
+  <div class="bg-primary" style="margin-top:12px;height:11px"></div>
+  <div class="bg-primary" style="margin-top:13px;height:10px"></div>
+  <div class="bg-primary" style="margin-top:14px;height:9px"></div>
+  <div class="bg-primary" style="margin-top:15px;height:8px"></div>
+  <div class="bg-primary" style="margin-top:16px;height:7px"></div>
+  <div class="bg-primary" style="margin-top:17px;height:6px"></div>
+  <div class="bg-primary" style="margin-top:18px;height:5px"></div>
+  <div class="bg-primary" style="margin-top:19px;height:4px"></div>
+  <div class="bg-primary" style="margin-top:20px;height:3px"></div>
+  <div class="bg-primary" style="margin-top:21px;height:2px"></div>
+  <div class="bg-primary" style="margin-top:22px;height:1px"></div>
+  <div class="bg-primary" style="margin-top:23px;height:0px"></div>
+  
+  <!--]--></div>
+
+      
+ 
+    
+
+    
+   
 
   <script>
     if (location.protocol != "https:") {
