@@ -243,22 +243,7 @@
         line-height: 80px;
       }
 
-      .title442lancelot93army {
-        font-size: 19px !important;
-        margin-bottom: -15px;
-        font-family: "senseistandard" !important;
-        letter-spacing: 0px;
-        color:  #7CF178;
-        letter-spacing: 0px !important;
-        padding-left: 18px;
-        padding-right: 18px;
-        margin-top: 46px;
-        line-height: 36px;
-        max-width: 650px;
-        margin-left: auto;
-        margin-right: auto;
-        cursor: default;
-      }
+
 
       .subtitle442lancelot {
         margin-bottom: 20px;
@@ -1748,6 +1733,33 @@
                 opacity: 0;
             }
         }
+              
+                   .title442lancelot93army {
+        font-size: 19px !important;
+        margin-bottom: -15px;
+        font-family: "senseistandard" !important;
+        letter-spacing: 0px;
+        color:  #7CF178;
+        letter-spacing: 0px !important;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 46px;
+        line-height: 37px;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: default;
+      }
+              
+    .responsivekesak {
+      position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+    }
+              
     </style>
 
  <script>
@@ -1798,7 +1810,23 @@
             </div>
           </div>
         </div>
+        
 
+
+  <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divResponsive = document.querySelector('.responsivekesak');
+      divResponsive.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divResponsive.style.visibility = 'visible'; // Rendre la div visible
+      divResponsive.style.position = 'static'; // Restaurer la position normale
+    }
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 14900); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+
+        
         <script>
           var words = [
             " ''Le parc et ses activités'' ",
