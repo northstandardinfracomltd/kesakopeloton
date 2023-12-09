@@ -1719,7 +1719,6 @@
         <div class="faze1">
 
 
-
     <div class="container442lancelot">
       
       <div class="content442lancelot">
@@ -1727,17 +1726,18 @@
           Partageons des<span class="highlightkesako3"> contenus</span>
           <span class="highlightkesako">mémorables</span>
         </div>
-        <div id="typing-text" class="title442lancelot93army">
-          Kesako est un collectif de graphistes, rédacteurs et éditeurs,
-          spécialisé dans la création de fichiers institutionnels, éducatifs et
-          commerciaux — Nous nous concentrons sur l'expérience du lecteur, la
-          composition des contenus et veillons à ce que les bons messages soient
-          relayés.
-        </div>
+         <div class="title442lancelot93army" id="typing-text">
+        <span class="blink-cursor"></span>
+    </div>
             <style>
-        .title442lancelot93army::after {
-            content: '█';  /* Curseur initial */
+       .title442lancelot93army::after {
+            content: '|';  /* Curseur initial */
             animation: blink 1s infinite;  /* Animation pour faire clignoter le curseur */
+        }
+
+        .blink-cursor::after {
+            content: '';  /* Curseur vide */
+            animation: none;  /* Désactive l'animation du curseur */
         }
 
         @keyframes blink {
@@ -1750,21 +1750,24 @@
         }
     </style>
 
-    <script>
+ <script>
         document.addEventListener('DOMContentLoaded', function() {
             const textElement = document.getElementById('typing-text');
-            const textContent = textElement.textContent;
-            textElement.textContent = '';  // Clear the text content
-
+            const textContent = "Kesako est un collectif de graphistes, rédacteurs et éditeurs, spécialisé dans la création de fichiers institutionnels, éducatifs et commerciaux — Nous nous concentrons sur l'expérience du lecteur, la composition des contenus et veillons à ce que les bons messages soient relayés.";
+            
             let index = 0;
             const typingInterval = 50;  // Adjust the typing speed (in milliseconds)
 
             function typeText() {
-                textElement.textContent += textContent[index];
+                textElement.innerHTML += textContent[index];
                 index++;
 
                 if (index < textContent.length) {
                     setTimeout(typeText, typingInterval);
+                } else {
+                    // Une fois que le texte est entièrement écrit, ajoute la classe blink-cursor
+                    textElement.innerHTML += '<span class="blink-cursor"></span>';
+                    textElement.classList.add('blink-cursor');
                 }
             }
 
@@ -1995,20 +1998,6 @@
           </div>
         </div>
         
-          <div class="MKKzoom">
-                 <div class="MKK">
-       À partir de <span class="MKK2">139€</span><span class="MKK9"> par page</span>
-      
-        </div>
-        
-         <div class="MKK4">
-                     
-     Les taxes et les révisions sont incluses.
-
-
-  
-        </div>
-          </div>
 
   </div>  </div> 
 
