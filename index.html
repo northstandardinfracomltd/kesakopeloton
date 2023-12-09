@@ -52,6 +52,21 @@
     setTimeout(afficherDiv, 800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
     
+         <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divbtnk0 = document.querySelector('.btnk0');
+      divbtnk0.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divbtnk0.style.visibility = 'visible'; // Rendre la div visible
+      divbtnk0.style.position = 'static'; // Restaurer la position normale
+    }
+
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+    
+    
     
      <script>
     // Fonction pour afficher la div en douceur après 16 secondes
@@ -64,7 +79,7 @@
 
 
     // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+    setTimeout(afficherDiv, 1800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
     
         
@@ -79,7 +94,7 @@
 
 
     // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 1800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+    setTimeout(afficherDiv, 2800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
     
      <script>
@@ -93,7 +108,7 @@
 
 
     // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 2800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+    setTimeout(afficherDiv, 3800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
     
      <style>
@@ -1772,7 +1787,7 @@
       
       .menu-grid-headerkesako {
     display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
     gap: 0px;
     align-items: center;
@@ -1780,6 +1795,10 @@
         padding-top: 15px;
         padding-left: 15px;
 
+}
+      
+      .logo-headerkesako {
+    text-align: center;
 }
 
 .logo-headerkesako img {
@@ -1789,7 +1808,9 @@
 
 .buttons-headerkesako {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+  text-align: left !important;
+  
 }
 
 .button-headerkesako {
@@ -1806,12 +1827,22 @@
   white-space: nowrap;
     cursor: pointer !important;
   color: #fff !important;
+  margin-right: 10px;
 }
 
 .text-headerkesako {
     text-align: right;
 }
 
+      
+        .btnk0 {
+      position: absolute; /* Retirer la div du flux normal du document */
+      top: 0; /* Ajuster la position top selon vos besoins */
+      left: 0; /* Ajuster la position left selon vos besoins */
+      opacity: 0; /* Initialiser l'opacité à 0 */
+      visibility: hidden; /* Masquer la div */
+      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+    } 
 
     </style>
 
@@ -1828,15 +1859,19 @@
 
 <div class="menu-grid-headerkesako">
     <!-- Colonne 1: Logo -->
-    <div class="logo-headerkesako">
-        <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako0923237092320973329038203239292929Git.svg?v=1701785272044" alt="Logo" style="max-width: 200px;">
-    <a href="#" class="button-headerkesako btnk1">Contact Sales</a>
+
+  
+      <div class="buttons-headerkesako">
+   <a href="#" class="button-headerkesako btnk1">Contact Sales</a>
         <a href="#" class="button-headerkesako btnk2">Company Eco System</a>
         <a href="#" class="button-headerkesako btnk3">Visit</a>
-  </div>
+    </div>
   
 
+  <div class="logo-headerkesako">
+      <div class="btnk0">   <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako0923237092320973329038203239292929Git.svg?v=1701785272044" alt="Logo" style="max-width: 200px;"> </div>
 
+  </div>
 
 
     <!-- Colonne 3: Texte dummy -->
