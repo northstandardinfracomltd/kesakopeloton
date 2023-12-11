@@ -218,6 +218,7 @@
         margin-top: 5px;
         line-height: 98px;
         cursor: default;
+        min-height: 220px;
         
         
            position: absolute; /* Retirer la div du flux normal du document */
@@ -1810,7 +1811,7 @@
     display: flex;
     justify-content: left;
   text-align: left !important;
-  
+  min-height: 45px;
 }
 
 .button-headerkesako {
@@ -1869,10 +1870,22 @@
   
 
   <div class="logo-headerkesako">
-      <div class="btnk0">   <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako0923237092320973329038203239292929Git.svg?v=1701785272044" alt="Logo" style="max-width: 200px;"> </div>
+      <div class="btnk0 logoanim">   <img src="https://cdn.glitch.global/db00b4f2-c5a9-4a16-86f0-60cb4fe5b4d1/Kesako0923237092320973329038203239292929Git.svg?v=1701785272044" alt="Logo" style="max-width: 200px;"> </div>
 
   </div>
+          <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divlogoanim = document.querySelector('.logoanim');
+      divlogoanim.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divlogoanim.style.visibility = 'visible'; // Rendre la div visible
+      divlogoanim.style.position = 'static'; // Restaurer la position normale
+    }
 
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 4500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
 
     <!-- Colonne 3: Texte dummy -->
     <div class="text-headerkesako">
@@ -1913,6 +1926,10 @@
     // Appel de la fonction après un délai de 16 secondes
     setTimeout(afficherDiv, 3500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
+  
+  
+  
+ 
   
          <script>
     // Fonction pour afficher la div en douceur après 16 secondes
@@ -2034,7 +2051,7 @@
       left: 0; /* Ajuster la position left selon vos besoins */
       opacity: 0; /* Initialiser l'opacité à 0 */
       visibility: hidden; /* Masquer la div */
-      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+      transition: opacity 0s ease, visibility 0s ease, top 0s ease, left 0s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
     } 
               
                      .txt2ter {
@@ -2043,8 +2060,11 @@
       left: 0; /* Ajuster la position left selon vos besoins */
       opacity: 0; /* Initialiser l'opacité à 0 */
       visibility: hidden; /* Masquer la div */
-      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+      transition: opacity 0s ease, visibility 0s ease, top 0s ease, left 0s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
     } 
+              
+  
+           
             
                                    .txt3ter {
       position: absolute; /* Retirer la div du flux normal du document */
@@ -2052,7 +2072,7 @@
       left: 0; /* Ajuster la position left selon vos besoins */
       opacity: 0; /* Initialiser l'opacité à 0 */
       visibility: hidden; /* Masquer la div */
-      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+      transition: opacity 0s ease, visibility 0s ease, top 0s ease, left 0s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
     } 
               
              
@@ -2100,7 +2120,7 @@
       left: 0; /* Ajuster la position left selon vos besoins */
       opacity: 0; /* Initialiser l'opacité à 0 */
       visibility: hidden; /* Masquer la div */
-      transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
+      transition: opacity 0s ease, visibility 0s ease, top 0s ease, left 0s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
     }
               
     </style>
@@ -2484,7 +2504,7 @@
     }
 
     // Appel de la fonction après un délai de 16 secondes
-    setTimeout(afficherDiv, 35000); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+    setTimeout(afficherDiv, 33500); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
   </script>
           
   <div class="ineoss">
