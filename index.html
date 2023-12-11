@@ -898,16 +898,15 @@ max-width: 500px;
           position: absolute;
           top: 40px;
           right: -9px;
-          background-color: #2b2b2b;
-          border: 1px solid #3b3b3b;
           border-radius: 12px;
           color: #a6a6a6;
-          min-width: 180px;
+          min-width: 199px;
           padding-top: 13px;
           padding-bottom: 13px;
           padding-left: 13px;
           padding-right: 13px;
           cursor: default;
+          z-index: 99999;
         }
       }
 
@@ -1799,7 +1798,14 @@ max-width: 500px;
                 @media (min-width: 100px) and (max-width: 819px) {
       .menu-grid-headerkesako {
         grid-template-columns: repeat(2, 1fr);
-                     width: 97%;
+                     max-width: 95%;
+
+}
+        }
+      
+                      @media (min-width: 820px) and (max-width: 1166px) {
+      .responsivetablethide {
+        display: none !important;
 
 }
         }
@@ -1871,7 +1877,7 @@ max-width: 500px;
       
                 @media (min-width: 100px) and (max-width: 819px) {
  .text-headerkesako {
-  padding-right: 22px;
+  padding-right: 14px;
 }
         }
       
@@ -1923,7 +1929,7 @@ max-width: 500px;
       <div class="buttons-headerkesako">
    <a href="mailto:mail@kesako.xyz" class="button-headerkesako btnk1">Contact Sales</a>
         <a href="/sustainability" class="button-headerkesako btnk2">Company Eco System</a>
-        <a href="/uk" class="button-headerkesako btnk3">ENG</a>
+        <a href="/uk" class="button-headerkesako btnk3 responsivetablethide">ENG</a>
     </div>
   
 
@@ -2349,7 +2355,7 @@ max-width: 500px;
               <p class="titrex">Livret</p>
             </div>
             <div class="div-content">
-              <p class="titrex">Ebook</p>
+              <p class="titrex">Système UI</p>
             </div>
           </div>
 
@@ -2517,7 +2523,13 @@ max-width: 500px;
       visibility: hidden; /* Masquer la div */
       transition: opacity 1s ease, visibility 1s ease, top 1s ease, left 1s ease; /* Ajouter une transition sur l'opacité, la visibilité, la position top et la position left avec une durée de 1 seconde */
     }
- 
+                 @media (min-width: 100px) and (max-width: 819px) {
+    .gridcontainer1 {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+     }
+        }
+    
 
     .divcontent1 {
       border: 1.2px solid #3d3556;
