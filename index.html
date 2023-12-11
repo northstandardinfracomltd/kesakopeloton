@@ -1644,13 +1644,13 @@
 
             .highlightkesako {
               -webkit-text-fill-color: transparent;
-              background: -webkit-linear-gradient(rgb(255 79 1), rgb(255 79 1), rgb(255 79 1));
+              background: -webkit-linear-gradient(#7CF178, #7CF178, #7CF178);
               -webkit-background-clip: text;
             }
 
                  .highlightkesako3 {
               -webkit-text-fill-color: transparent;
-              background: -webkit-linear-gradient(rgb(61, 69, 146), rgb(61, 69, 146), rgb(61, 69, 146));
+              background: -webkit-linear-gradient(rgb(98 86 138), rgb(98 86 138), rgb(98 86 138));
               -webkit-background-clip: text;
             }
 
@@ -1899,6 +1899,23 @@
             icon.classList.toggle("active");
           });
         </script>
+  
+       <script>
+    // Fonction pour afficher la div en douceur après 16 secondes
+    function afficherDiv() {
+      var divhighlightkesako2 = document.querySelector('.highlightkesako2');
+      divhighlightkesako2.style.opacity = '1'; // Réglez l'opacité sur 1 pour afficher en douceur
+      divhighlightkesako2.style.visibility = 'visible'; // Rendre la div visible
+      divhighlightkesako2.style.position = 'static'; // Restaurer la position normale
+    }
+
+
+    // Appel de la fonction après un délai de 16 secondes
+    setTimeout(afficherDiv, 1800); // Le temps est en millisecondes (16 secondes = 16000 millisecondes)
+  </script>
+    
+  
+  
 </body>
 </html>
 
@@ -1916,7 +1933,7 @@
       <div class="content442lancelot">
         <div class="title442lancelot">
           Partageons des<span class="highlightkesako3"> contenus</span>
-          <span class="highlightkesako">mémorables</span>
+          <span class="highlightkesako">mémo</span><span class="highlightkesako2">rables</span>
         </div>
          <div class="title442lancelot93army" id="typing-text">
         <span class="blink-cursor"></span>
